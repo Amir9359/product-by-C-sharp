@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C9E64AC-E113-4163-AB7B-206DCE6F0B2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>product</RootNamespace>
+    <AssemblyName>product</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExtensionDate">
+      <HintPath>.\ExtensionDate.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="InventoryToinventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryToinventory.Designer.cs">
+      <DependentUpon>InventoryToinventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryHandeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryHandeling.Designer.cs">
+      <DependentUpon>InventoryHandeling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryHandelingContradiction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryHandelingContradiction.Designer.cs">
+      <DependentUpon>InventoryHandelingContradiction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeapingPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeapingPlace.Designer.cs">
+      <DependentUpon>KeapingPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportinventoryToinventoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportinventoryToinventoryDetail.Designer.cs">
+      <DependentUpon>ReportinventoryToinventoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productinventoryAssinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productinventoryAssinment.Designer.cs">
+      <DependentUpon>productinventoryAssinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportinventoryAssimentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportinventoryAssimentDetail.Designer.cs">
+      <DependentUpon>ReportinventoryAssimentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportinventoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportinventoryDetail.Designer.cs">
+      <DependentUpon>ReportinventoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="country.Designer.cs">
+      <DependentUpon>country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="province.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="province.Designer.cs">
+      <DependentUpon>province.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controluser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controluser.Designer.cs">
+      <DependentUpon>controluser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportProductNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportProductNumber.Designer.cs">
+      <DependentUpon>ReportProductNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recide.Designer.cs">
+      <DependentUpon>Recide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticClass.cs" />
+    <Compile Include="staticuser.cs" />
+    <Compile Include="System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System.Designer.cs">
+      <DependentUpon>System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory.Designer.cs">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productinventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productinventory.Designer.cs">
+      <DependentUpon>productinventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productManage.Designer.cs">
+      <DependentUpon>productManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="provider.Designer.cs">
+      <DependentUpon>provider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="city.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="city.Designer.cs">
+      <DependentUpon>city.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unit.Designer.cs">
+      <DependentUpon>unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veiwDataGrideproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veiwDataGrideproduct.Designer.cs">
+      <DependentUpon>veiwDataGrideproduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InventoryToinventory.resx">
+      <DependentUpon>InventoryToinventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryHandeling.resx">
+      <DependentUpon>InventoryHandeling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryHandelingContradiction.resx">
+      <DependentUpon>InventoryHandelingContradiction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeapingPlace.resx">
+      <DependentUpon>KeapingPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportinventoryToinventoryDetail.resx">
+      <DependentUpon>ReportinventoryToinventoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="country.resx">
+      <DependentUpon>country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productinventoryAssinment.resx">
+      <DependentUpon>productinventoryAssinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportinventoryAssimentDetail.resx">
+      <DependentUpon>ReportinventoryAssimentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportinventoryDetail.resx">
+      <DependentUpon>ReportinventoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="province.resx">
+      <DependentUpon>province.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controluser.resx">
+      <DependentUpon>controluser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportProductNumber.resx">
+      <DependentUpon>ReportProductNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System.resx">
+      <DependentUpon>System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory.resx">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productinventory.resx">
+      <DependentUpon>productinventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productManage.resx">
+      <DependentUpon>productManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="provider.resx">
+      <DependentUpon>provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="city.resx">
+      <DependentUpon>city.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recide.resx">
+      <DependentUpon>Recide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unit.resx">
+      <DependentUpon>unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veiwDataGrideproduct.resx">
+      <DependentUpon>veiwDataGrideproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{b7c62f20-77bb-4979-b73a-04d40f0768a5}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tebeslami.apk_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0632_security_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0633_security_lock_unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0711_young_boy_user_profile_avatar_man_male.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

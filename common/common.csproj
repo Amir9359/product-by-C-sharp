@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7C62F20-77BB-4979-B73A-04D40F0768A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>common</RootNamespace>
+    <AssemblyName>common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baseForm.Designer.cs">
+      <DependentUpon>baseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Datecontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Datecontrol.Designer.cs">
+      <DependentUpon>Datecontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateForm.Designer.cs">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="executeQuery.cs" />
+    <Compile Include="InventoryHandelingContradiction.cs" />
+    <Compile Include="listView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listView.Designer.cs">
+      <DependentUpon>listView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="myButton.Designer.cs">
+      <DependentUpon>myButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="myDataGrid.Designer.cs">
+      <DependentUpon>myDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mydate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mydate.Designer.cs">
+      <DependentUpon>mydate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDelegate.cs" />
+    <Compile Include="myenum.cs" />
+    <Compile Include="mymessagbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mymessagbox.Designer.cs">
+      <DependentUpon>mymessagbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mytexbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mytexbox.Designer.cs">
+      <DependentUpon>mytexbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myunituserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="myunituserControl.Designer.cs">
+      <DependentUpon>myunituserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="staticuser.cs" />
+    <Compile Include="TimeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeControl.Designer.cs">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="baseForm.resx">
+      <DependentUpon>baseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datecontrol.resx">
+      <DependentUpon>Datecontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateForm.resx">
+      <DependentUpon>DateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listView.resx">
+      <DependentUpon>listView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myDataGrid.resx">
+      <DependentUpon>myDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mydate.resx">
+      <DependentUpon>mydate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mymessagbox.resx">
+      <DependentUpon>mymessagbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mytexbox.resx">
+      <DependentUpon>mytexbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myunituserControl.resx">
+      <DependentUpon>myunituserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeControl.resx">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tebeslami.apk_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0633_security_lock_unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0632_security_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0711_young_boy_user_profile_avatar_man_male.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
