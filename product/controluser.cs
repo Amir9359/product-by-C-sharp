@@ -42,7 +42,7 @@ namespace product
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+            SqlConnection conn = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
             conn.Open();

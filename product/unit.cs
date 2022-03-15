@@ -35,6 +35,7 @@ namespace product
 
         private void button1_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             panel2.Visible = true;
             ex = new executeQuery();
             string a = "select * from unitt ";
@@ -44,6 +45,7 @@ namespace product
         private void button3_Click_1(object sender, EventArgs e)
         {
             btnDelet.Enabled  = panel2.Visible = btnEdit .Enabled  = false;
+            panel1.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -76,7 +78,7 @@ namespace product
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-     
+            panel1.Visible = true;
             txtname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
              btnDelet.Enabled  = btnEdit.Enabled  = true;
             panel2.Visible = false;

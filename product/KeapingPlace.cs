@@ -20,7 +20,7 @@ namespace product
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             if(con.State ==ConnectionState.Closed )
             con.Open();
             SqlCommand com = new SqlCommand();

@@ -28,10 +28,11 @@
         /// </summary>
         private  void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +44,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.txtname = new System.Windows.Forms.TextBox();
             this.myunituserControl1 = new product.myunituserControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -67,10 +67,17 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.myunituserControl1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(2, 5);
+            this.panel1.Location = new System.Drawing.Point(-1, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(546, 437);
             this.panel1.TabIndex = 2;
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(111, 160);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(257, 23);
+            this.txtname.TabIndex = 6;
             // 
             // panel2
             // 
@@ -89,8 +96,8 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.column1,
@@ -99,8 +106,9 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(527, 411);
@@ -112,6 +120,7 @@
             this.column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.column1.DataPropertyName = "code";
             this.column1.HeaderText = "کد ";
+            this.column1.MinimumWidth = 6;
             this.column1.Name = "column1";
             this.column1.ReadOnly = true;
             this.column1.Width = 120;
@@ -121,6 +130,7 @@
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.DataPropertyName = "name";
             this.Column3.HeaderText = "واحد مصرف";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -224,13 +234,6 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(111, 160);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(257, 23);
-            this.txtname.TabIndex = 6;
-            // 
             // myunituserControl1
             // 
             this.myunituserControl1.AutoSize = true;
@@ -238,8 +241,10 @@
             this.myunituserControl1.Location = new System.Drawing.Point(116, 222);
             this.myunituserControl1.Margin = new System.Windows.Forms.Padding(0);
             this.myunituserControl1.MyDB = "unitt";
-            this.myunituserControl1.MyID = 0;
+            this.myunituserControl1.myFildeCode = "code";
             this.myunituserControl1.MyFormname = "لیست واحد مصرف ";
+            this.myunituserControl1.MyID = 0;
+            this.myunituserControl1.MyText = "";
             this.myunituserControl1.Mytitle = "name";
             this.myunituserControl1.Name = "myunituserControl1";
             this.myunituserControl1.Size = new System.Drawing.Size(237, 33);
@@ -252,8 +257,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(704, 447);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

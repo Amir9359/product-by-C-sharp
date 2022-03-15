@@ -50,7 +50,7 @@ namespace product
         private void btnDelet_Click(object sender, EventArgs e)
         {
 
-            SqlConnection con = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
 
@@ -94,8 +94,7 @@ namespace product
 
         private void button3_Click(object sender, EventArgs e)
         {
-            foreach (TextBox a in Controls)
-                a.Text = string.Empty;
+ 
             txtusername.ReadOnly = btnDelet.Enabled = panel2.Visible = btnEdit.Enabled = label2.Visible = txtcode.Visible = false;
         }
 
@@ -106,7 +105,7 @@ namespace product
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
 

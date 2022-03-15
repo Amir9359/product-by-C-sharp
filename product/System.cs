@@ -37,7 +37,7 @@ namespace product
         {
 
             ex = new executeQuery();
-            ex .date_time(toolStripLabel2,toolStripLabel4);
+            ex.date_time(toolStripLabel2,toolStripLabel4);
             staticuser.date = toolStripLabel2.Text;
 
         }

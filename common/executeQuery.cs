@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace product
         public DataTable t1;
         public int executnonQuery(string comand)
         {
-            SqlConnection conn = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection conn = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
             int a = -1;
@@ -46,7 +47,7 @@ namespace product
           }
         public object executscaler(string comand)
         {
-            SqlConnection conn = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection conn = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
             conn.Open();
@@ -82,7 +83,7 @@ namespace product
         }
         public SqlDataReader executeReader(string query)
         {
-            SqlConnection conn = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+            SqlConnection conn = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand(query, conn);
 
             conn.Open();
@@ -94,7 +95,7 @@ namespace product
         // t1 که بالا معرفی کرده ایم که از این به بعد میتوانیم به اندسترسی داشته باشیم چون پرشده است .
         public  DataTable executeDataTabel(string query)
         {
-        SqlConnection con = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+        SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
         SqlCommand com = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
         t1 = new DataTable();
@@ -113,7 +114,7 @@ namespace product
         {
 
 
-            SqlConnection con = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable t1 = new DataTable();
@@ -145,7 +146,7 @@ namespace product
         {
 
 
-            SqlConnection con = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
             SqlDataAdapter da = new SqlDataAdapter();
@@ -167,7 +168,7 @@ namespace product
         {
 
             //comb.Items .Clear();
-            SqlConnection con = new SqlConnection("data Source=.; initial catalog=productDb;integrated security=true;");
+            SqlConnection con = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand();
 
             SqlDataAdapter da = new SqlDataAdapter();
@@ -187,10 +188,10 @@ namespace product
         }
         public void date_time(ToolStripLabel t1, ToolStripLabel t2)
         {
-
-            string year = DateTime.Now.Date.ToString().Substring(6, 4);
-            string month = DateTime.Now.Date.ToString().Substring(3, 2);
-            string day = DateTime.Now.Date.ToString().Substring(0, 2);
+            PersianCalendar persian = new PersianCalendar();
+            string year = persian.GetYear(DateTime.Now).ToString();
+            string month = persian.GetMonth(DateTime.Now).ToString().PadLeft(2,'0');
+            string day = persian.GetDayOfMonth(DateTime.Now).ToString().PadLeft(2, '0');
             string date = year + "/" + month + "/" + day;
             string time = DateTime.Now.ToShortTimeString();
 

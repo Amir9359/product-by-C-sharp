@@ -73,7 +73,7 @@ namespace product
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection("data Source=DESKTOP-FP1JKF9\\AMIR; initial catalog=productDb;integrated security=true;");
+            SqlConnection conn = new SqlConnection("data Source=.;  uid=Amir1;pwd=nFadHh99; initial catalog=productDb;integrated security=true;");
             SqlCommand com = new SqlCommand("select * from product where code= " + dataGridView1.CurrentRow.Cells[0].Value, conn);
 
             conn.Open();

@@ -57,6 +57,7 @@
     <Compile Include="Datecontrol.Designer.cs">
       <DependentUpon>Datecontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="dateconverter.cs" />
     <Compile Include="DateForm.cs">
       <SubType>Form</SubType>
     </Compile>
